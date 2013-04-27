@@ -1,7 +1,6 @@
-class Garage
+class Van
 	def initialize(bikes=[])
 		@bikes = bikes
-		@max_bikes = bikes.size
 	end
 	def bikes
 		@bikes
@@ -10,7 +9,7 @@ class Garage
 		@bikes.push(bike.fix)
 	end
 	def receive_from(van)
-		van.drop_off.each {|bike| receive(bike) }
+		van.pick_up.each {|bike| receive(bike) }
 		@bikes
 	end
 end
