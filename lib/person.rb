@@ -1,3 +1,5 @@
+#Hello Charlie...
+
 class Person
 
   def rent_bike_from(station)
