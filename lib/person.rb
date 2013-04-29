@@ -1,5 +1,7 @@
 #Hello Charlie...
 
+#Checking changes
+
 class Person
 
   def rent_bike_from(station)
