@@ -1,5 +1,4 @@
 class DockingStation
-
   def initialize(bikes=[])
     @stock = bikes
     @max_bikes = @stock.size

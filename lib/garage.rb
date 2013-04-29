@@ -1,14 +1,15 @@
 class Garage
-
-def initialize(bike=[])
-  @bike = bike
-end
-
-def bike
-  @bike
-end
-
-def receive(bike)
-  @bike.push(bike)
-end
+	def initialize(bikes=[])
+		@bikes = bikes
+	end
+	def bikes
+		@bikes
+	end
+	def receive(bike)
+		@bikes.push(bike.fix)
+	end
+	def receive_from(van)
+		van.drop_off.each {|bike| receive(bike) }
+		@bikes
+	end
 end
