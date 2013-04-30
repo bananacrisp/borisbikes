@@ -1,17 +1,19 @@
+require_relative 'module_bike'
+require_relative 'module_transfer'
+
 class Garage
+	#include modules
+	include Bike
+	include Transfer
+
 	def initialize(bikes=[])
 		@bikes = bikes
 		@max_bikes = bikes.size
 	end
-	def bikes
-		@bikes
-	end
 	def receive(bike)
-		@bikes.push(bike.fix)
+		transfer_in(fix(bike))
 	end
-
-	def receive_from(van)
-		van.drop_off.each {|bike| receive(bike) }
-		@bikes
+	def fix(bike)
+		:fixed_bike
 	end
 end
