@@ -16,4 +16,10 @@ class Garage
 	def fix(bike)
 		:fixed_bike
 	end
+
+
+	def gives
+		@fixed_bikes = transfer_out
+		@fixed_bikes
+	end
 end
