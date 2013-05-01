@@ -1,4 +1,5 @@
 require 'garage'
+require 'garage_test'
 
 describe 'garage' do
 

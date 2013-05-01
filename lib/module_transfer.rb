@@ -8,3 +8,12 @@ module Transfer
 		@bikes.shift(4)
 	end
 end
+
+
+#module Deliver
+
+module Deliver
+	def deliver(bike)
+		@bike.push(bike)
+	end
+end
