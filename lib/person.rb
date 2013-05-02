@@ -1,7 +1,7 @@
 #Person
 
 class Person
-	#include modules?
+	#include modules?*
 	def has_a_bike?
 		if @bike == nil
 			return false
