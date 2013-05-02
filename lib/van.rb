@@ -1,9 +1,16 @@
 class Van
+attr_reader :bikes
 
- def has_broken_bikes?
-  :broken_bike
- end
+def initialize(bike=[])
+   @bikes = bike
+end
 
- def take_broken_bikes(station)
- end
+def pick_up(bike)
+	@bikes.push(bike)
+end
+
+def drop_off
+    @bikes.shift
+end
+
 end

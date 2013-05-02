@@ -1,9 +1,9 @@
 require 'person'
 
 describe 'Person' do
-let(:person) {Person.new}
-let(:station) {double :station, transfer_out: :bike, transfer_in: :bike}
-let(:bike) {double :bike, damage: :broken_bike}
+  let(:person) {Person.new}
+  let(:station) {double :station, transfer_out: :bike, transfer_in: :bike}
+  let(:bike) {double :bike, damage: :broken_bike}
   
   it 'has no bike' do
     person.has_a_bike?.should be_false
