@@ -20,9 +20,6 @@ describe 'dockingstation' do
   	station.rental_return(person.rent_return).should eq [:bike1, :bike2, :bike3]
   end
 
-
-
-
   #Release to van
   it 'can release a bike' do
   	station.release.should eq :bike1

@@ -5,12 +5,16 @@ def initialize(bike=[])
    @bikes = bike
 end
 
-def pick_up(bike)
+def take_away(bike)
 	@bikes.push(bike)
 end
 
-def drop_off
+def replenish
     @bikes.shift
+end
+
+def drop_off
+	@bikes.shift
 end
 
 end
