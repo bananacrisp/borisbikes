@@ -1,11 +1,11 @@
 #Module Transfer
 
 module Transfer
-	def transfer_in(bike)
-		@bikes.push(bike)
+	def transfer_in_to(bike)
+		@bike = bike
 	end
-	def transfer_out
-		@bikes.shift(4)
+	def transfer_out_of
+		@bikes = bike
 	end
 end
 
