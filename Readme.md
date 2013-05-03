@@ -7,7 +7,7 @@ The aim is to recreate the rental system for the famous 'Boris Bikes' in London.
 ## What do we know
 
 - People can go to a docking station and rent a bike
-- They can also return bikesto a docking station
+- They can also return bikes to a docking station
 - A docking station has a number of bikes it can hold
 - Some bikes can be broken and will not be available for rental
 - Bikes can be returned to any docking station

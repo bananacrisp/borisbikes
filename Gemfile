@@ -7,4 +7,5 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'rspec'
   gem 'rb-fsevent'
+  gem 'terminal-notifier-guard'
 end
