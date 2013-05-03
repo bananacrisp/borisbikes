@@ -17,4 +17,8 @@ def drop_off
 	@bikes.shift
 end
 
+def pick_up(bike)
+   @bikes.push(bike) 
+end
+
 end
