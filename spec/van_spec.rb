@@ -29,6 +29,8 @@ let(:garage) {double :garage, accept: [], push_out: :bike10}
   	van.drop_off.should eq :bike2
   end
 
-  
+  it 'a van can pick up a bike from a garage' do
+        van.pick_up(garage.push_out).should eq [:bike10]
+  end
 
 end

@@ -22,11 +22,7 @@ class GarageTest
    @bikes.shift
   end
 
-  def check_bike(bike)
-   if true
-      @bikes
-   else
-      @bikes.push(bike)
-   end
+  def fix
+   @bikes
   end
 end
